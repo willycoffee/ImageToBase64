@@ -7,7 +7,7 @@ def base64_encode(string: str) -> str:
 def base64_decode(string: str) -> str:
     return base64.urlsafe_b64decode(string.encode()).decode()
 
-or file in os.listdir("/image"):
+for file in os.listdir("/image"):
     if file.endswith(".png") or file.endswith('.jpg'):
         image_path = file
         img = Image.open(image_path)
